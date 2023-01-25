@@ -1,0 +1,78 @@
+/* Styling for HW-02 Goes in this File */
+
+
+/* Styling General Headings */
+body {
+	font-family: Arial;
+   min-width: 730px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul{
+  style="list-style-type:circle;"
+}
+
+/* Styling Table */
+table{
+  width: 90%;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0 3px;
+}
+
+td{
+  border-bottom: 0.8px solid black;
+}
+
+th {
+  color: black;
+  background: lightskyblue;
+}
+
+/* Styling Shapes Within Div */
+svg:hover rect{
+  fill: rgb(128, 0, 191);
+}
+
+#decoration{
+  min-width: 300px;
+}
+svg:hover circle{
+ stroke: black;
+ stroke-width: 3px;
+}
+
+circle{
+  fill-opacity: 50%;
+  fill: rgb(128, 0, 191);
+  position: fixed;
+}
+
+rect{
+ stroke-width:3;
+ stroke: black;
+ fill: rgb(100,0,100);
+}
+
+/* Styling Image */
+img {
+  width: 100%;
+}
+
+/* Styling Flexbox of Images */
+.flex-container {
+  display:flex;
+  align-items: center;
+  font-family: Arial;
+}  
+
+

@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html> 
 
+<!-- Meta Data and Connect CSS File-->
 <head>
     <meta charset=utf-8/>
+    <!-- Add a Title: "hw-02"-->
+    <title>hw-02</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
+
+<!-- Add div with the ID "data-abstraction" and Class "info"-->
+<div id="data-abstraction" class="info">
+    <!--Add a Centered Header "Dataset Types"-->
+    <h1>Dataset Types</h1>
+    <!-- Create Table-->
+    <table>
+  <tr>
+    <!-- Create Table Header with Column Names-->
+    <th>Data</th>
+    <th>Link</th>
+    <th>Dataset Type</th>
+  </tr>
+  <tr>
+    <!-- Adding Row Attributes-->
+    <td>UFO</td>
+    <td  width="200"> 
+        <a href="file:///Users/reelataher/Desktop/DS4200/hw-02-reela-taher/data/UFO.csv">
+        link </a>
+    </td>
+    <td>table</td>
+  </tr>
+  <tr>
+    <!--Linking Each Image and Filling Atributes-->
+    <td>Airports</td>
+    <td  width="200">
+    <a href="file:///Users/reelataher/Desktop/DS4200/hw-02-reela-taher/data/Airports.csv" download>
+        link</a>
+    </td>
+    <td>table</td>
+  </tr>
+  <tr>
+    <td>Google-Web</td>
+    <td  width="200">
+    <a href="file:///Users/reelataher/Desktop/DS4200/hw-02-reela-taher/data/Google-Web.txt">link</a>
+    </td>
+    <td>network</td>
+  </tr>
+</table>
+ <!--Add Another div with the Class "info"-->
+<div class = "info">
+    <!--Add a Centered Header "Data Types"-->
+    <h1>Data Types</h1>
+    <!--Add a Left-Aligned Header with the Name of the Dataset and DataType-->
+    <h2>UFO</h2>
+    <h5>The data type of the “UFO” dataset is a table as it is made up of rows and columns. It is independent of any particular visualization. In this case, each row represents a specific item or information concerning a UFO sighting seen over the last century. Each column represents a specific attribute for all UFO sightings. Lastly, each cell portrays the intersection of a row and a column ultimately revealing the value of their combination, for example, the state or country, of a specific UFO sighting seen.
+    </h5>
+    <ul>
+     <li>Date: Attribute</li>
+      <ul>
+      <li>Attribute Type: Ordinal, Sequential </li>
+    </ul>
+     <li>Time: Attribute</li>
+     <ul>
+      <li>Attribute Type: Ordinal, Sequential </li>
+    </ul>
+     <li>City: Attribute</li>
+      <ul>
+      <li>Attribute Type: Categorical</li>
+    </ul>
+     <li>State: Attribute</li>
+     <ul>
+      <li>Attribute Type: Categorical</li>
+    </ul>
+     <li>Country: Attribute</li>
+     <ul>
+      <li>Attribute Type: Categorical</li>
+    </ul>
+     <li>Shape: Attribute</li>
+     <ul>
+      <li>Attribute Type: Categorical</li>
+    </ul>
+     <li>Duration: Attribute</li>
+     <ul>
+      <li>Attribute Type: Quantitative</li>
+    </ul>
+    </ul>  
+    <h2>Airports</h2>
+    <h5>The row data type of the “Airports” dataset is a network as it is made up of rows and columns and is independent of any particular visualization. In this case, each row represents a specific item or information concerning the point data of the location of a certain Airport facility in Massachusetts. Each column represents a specific attribute for the data point location of an airport facility. Each cell portrays the intersection of a row and a column ultimately revealing the value of their combination, for example, the specific latitude of the airport facility data point.
+    </h5>
+    <ul>
+     <li>Airport-Name: Attribute</li>
+     <ul>
+      <li>Attribute Type: Categorical</li>
+    </ul>
+     <li>Latitude: Position</li>
+     <li>Longitude: Position</li>
+    </ul>  
+    <h2>Google-Web</h2>
+    <h5>The row data type of the “Google Web” dataset is a network as it specifies a particular relationship between two nodes. This dataset displays the parent and receiving nodes within the google webpage which can be considered a tree since it does not have a repeating cycle. For example, you can strictly view that the FromNodeID 0 has a relationship with the ToNodeID 891835. 
+    </h5>
+    <ul>
+     <li>DFromNodeID: Link</li>
+     <li>ToNodeID: Link</li>
+    </ul>  
+</div>
+</div>
+
+ <!--Add a div with the ID "task-abstraction"-->
+<div class = "info">
+    <!--Add a Centered Header "Task Abstraction"-->
+    <h1>Task Abstraction</h1>
+<div class = "flex-container" >
+        <div class = "column1">
+            <img src="file:///Users/reelataher/Desktop/DS4200/hw-02-reela-taher/img/vis1.png" alt="" srcset="">
+            <p> High-level task: Consume, Discover </p>
+            <ul>
+                <li>Used to discover target (Temperature) relative to the area (Vancouver) throughout different
+                months throughout the year.</li>
+            </ul>
+            <p> Medium-level task: Search, Lookup </p>
+            <ul>
+                <li>We know the target (Temperature) and the location (Vancouver).</li>
+            </ul>
+            <p> Low-level task: Query, Identify </p>
+            <ul>
+                <li>Can identify a specific temperature in accordance to a specific month.</li>
+            </ul>
+            <p> Target: Outlier </p>
+            <ul>
+                <li>The data points presented within this visualization are outliers.</li>
+            </ul>
+        </div>
+        <div class = "column2">
+            <center>
+                <img src="file:///Users/reelataher/Desktop/DS4200/hw-02-reela-taher/img/vis2.png" alt="" srcset="">
+            </center>
+            <p> High-level task: Consume, Present </p>
+            <ul>
+                <li>Communicates something specific to an audience.</li>
+            </ul>
+            <p> Medium-level task: Search, Browse </p>
+            <ul>
+                <li>The exact target is unkown but locations are specified.</li>
+            </ul>
+            <p> Low-level task: Query, Compare </p>
+            <ul>
+                <li>Summarizes when the temperature and displays a comparable visualization of two locations when they were above a specific degree during the course of 20 years.</li>
+            </ul>
+            <p> Target: Similarity </p>
+            <ul>
+                <li>Quantitative measurement of two attributes, two different locations are presented. It shows a 
+                similarity target as it can see how often the two locations have been above 20 degrees during the same
+            year.</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!--Add a div with the ID "decoration"-->
+<div id = "decoration">
+
+<!--Add a Row of Evenly Spaced, Alternating, Circles and Rectangles-->
+<svg width = "300" height = "150">
+    <circle cx="50" cy="50" r="40" />
+</svg>
+<svg width = "300" height = "150">
+    <rect x="10" y="15" width="80" height="80"/>
+</svg>
+<svg width = "300" height = "150">
+    <circle cx="50" cy="50" r="40" />
+</svg>
+<svg width = "300" height = "150">
+    <rect x="10" y="15" width="80" height="80"/>
+</svg>
+<svg width = "100" height = "150">
+    <circle cx="50" cy="50" r="40" />
+</svg>
+
+</div>
+
+<h2>Acknowledgements</h2>
+<h7>List of Resources Used</h7>
+<ul>
+<li><a href="https://css-tricks.com/scale-svg/">https://css-tricks.com/scale-svg/</a></li>
+<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+<li><a href="https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/">https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/</a></li>
+<li><a href="https://www.geeksforgeeks.org/html-tags-a-to-z-list/?ref=lbp">https://www.geeksforgeeks.org/html-tags-a-to-z-list/?ref=lbp</a></li>
+<li><a href="https://www.w3schools.com/graphics/svg_intro.asp">https://www.w3schools.com/graphics/svg_intro.asp</a></li>
+<li><a href="https://www.w3schools.com/css/default.asp">https://www.w3schools.com/css/default.asp</a></li>
+
+
+</ul>
 
 
 </body>
